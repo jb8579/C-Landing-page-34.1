@@ -59,7 +59,18 @@
     left: 0px;
     margin: 0px;
 }
-.faber-promo-card.promo-card-01 > h4 {
+a.hover-text {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a.hover-text:hover {
+    transform: translateY(-3px);
+}
+
+.faber-promo-card.promo-card-01 > a > h4 {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(235, 16, 16, 0.877);
     font-size: 38px;
@@ -67,7 +78,7 @@
     font-weight: 800;
     line-height: normal;
 }
-.faber-promo-card.promo-card-02 > h4 {
+.faber-promo-card.promo-card-02 > a > h4 {
     background: linear-gradient(90deg, #FDD533 0%, #FFEFAD 47.5%, #FDD533 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -79,7 +90,7 @@
     font-weight: 800;
     line-height: normal;
 }
-.faber-promo-card.promo-card-03 > h4 {
+.faber-promo-card.promo-card-03 > a > h4 {
     background: linear-gradient(90deg, #FDD533 30%, #FFEFAD 18.5%, #FDD533 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -90,7 +101,7 @@
     font-weight: 800;
     line-height: normal;
 }
-.faber-promo-card.promo-card-04 > h4 {
+.faber-promo-card.promo-card-04 > a > h4 {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(48, 45, 45, 0.877);
     font-family: "Exo 2";
@@ -99,7 +110,7 @@
     font-weight: 800;
     line-height: normal;
 }
-.faber-promo-card.promo-card-05 > h4{
+.faber-promo-card.promo-card-05 > a > h4{
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(192, 12, 192, 0.527);
     font-size: 45px;
@@ -107,7 +118,7 @@
     font-weight: 800;
     line-height: normal;
 }
-.faber-promo-card > p{
+.faber-promo-card >  a > p{
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 32px;
@@ -143,8 +154,6 @@
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }
-
-/* Ripple Effect */
 .faber-promo-card > a > button::after {
     content: "";
     position: absolute;
@@ -156,8 +165,6 @@
     transform: scale(1);
     transition: transform 0.5s, opacity 0.5s;
 }
-
-/* Activate Ripple on Hover */
 .faber-promo-card > a > button:hover::after {
     opacity: 1;
     transform: scale(10);
@@ -168,8 +175,6 @@
     color: #000;
     z-index: 99;
 }
-
-
 @media screen and (max-width: 767px) {
     img.header-logo-fav {
         width: 40px !important;
@@ -220,7 +225,7 @@
         font-size: 32px;
         width: 100%;
     }
-    .faber-promo-card > p {
+    .faber-promo-card > a > p {
         font-size: 28px;
     }
     .faber-promo-card > h3 {
@@ -240,11 +245,11 @@
 }
 @media only screen and (max-width: 868px) and (min-width: 601px) {
    
-    .faber-promo-card.promo-card-01 > h4,
-    .faber-promo-card.promo-card-02 > h4,
-    .faber-promo-card.promo-card-03 > h4,
-    .faber-promo-card.promo-card-04 > h4,
-    .faber-promo-card.promo-card-05 > h4
+    .faber-promo-card.promo-card-01 > a > h4,
+    .faber-promo-card.promo-card-02 > a > h4,
+    .faber-promo-card.promo-card-03 > a > h4,
+    .faber-promo-card.promo-card-04 > a > h4,
+    .faber-promo-card.promo-card-05 > a > h4
      {
       font-size: 30px;
     }
@@ -264,11 +269,11 @@
         justify-content: center;
         padding: 8px 0;
     }
-    .faber-promo-card.promo-card-01 > h4,
-    .faber-promo-card.promo-card-02 > h4,
-    .faber-promo-card.promo-card-03 > h4,
-    .faber-promo-card.promo-card-04 > h4,
-    .faber-promo-card.promo-card-05 > h4 {
+    .faber-promo-card.promo-card-01 > a > h4,
+    .faber-promo-card.promo-card-02 > a > h4,
+    .faber-promo-card.promo-card-03 > a > h4,
+    .faber-promo-card.promo-card-04 > a > h4,
+    .faber-promo-card.promo-card-05 > a > h4 {
         line-height: 40px;
         font-size: 34px;
     }
