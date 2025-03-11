@@ -1,0 +1,282 @@
+@media screen and (max-width: 600px) {
+    .contact-social ul li a > img {
+      width: 140px;
+    }
+    .contact-social ul li a {
+      height: 50px;
+    }
+    .d-flex-card {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .faberCard_1 > .jgrtopll4-c > h2 > span {
+      font-size: 35px;
+      text-shadow: 0 3px 3px rgb(0 84 177);
+    }
+    .container {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: 0px !important;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100% !important;
+    }
+    .faberCard_1 > .jgrtopll4-c > h2 {
+      font-size: 21px;
+    }
+    .faberCard_1,
+    .faberCard_2,
+    .faberCard_3,
+    .faberCard_4 {
+      background-position: 100%;
+      width: 100%;
+    }
+    .card-section-top.container.mt-5.pt-4 {
+      margin: 0 !important;
+      padding-top: 20px !important;
+    }
+    .faber-card.faberCard_1 {
+      padding: 0;
+      margin-bottom: 20px;
+      box-shadow: none;
+    }
+    .wf61IpZ51_1 > h1 {
+      font-size: 30px;
+      width: 100%;
+    }
+    .faberklajsjdjjl {
+      padding: 14px 0;
+    }
+    .customer-support-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .form-container {
+      padding: 20px;
+      max-width: 350px;
+    }
+    .faberlottofooter-area,
+    .hg_prize_picks_card {
+      margin: 0;
+    }
+    .overlay.overlay-03 {
+      left: 10%;
+      transform: translateX(0);
+    }
+    .customer-info {
+      text-align: center;
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+    }
+    .overlay {
+      top: 104px;
+      left: 40px;
+    }
+    button.btn {
+      font-weight: 500;
+      font-size: 16px;
+      padding: 2px 16px;
+    }
+    .faberlotto-waning-top > p {
+      font-size: 11px;
+      line-height: 16px;
+    }
+    .faberklajsjdjjl_btn {
+      position: relative;
+      top: 13px;
+    }
+    body::before {
+      background: linear-gradient(
+        109.6deg,
+        rgb(0 0 0 / 70%) 11.2%,
+        rgb(8 8 8 / 98%) 51.2%,
+        rgba(0, 0, 0, 0.671) 98.6%
+      );
+    }
+    .card-image {
+      height: 265px;
+    }
+    .carsd45c-ribbon > img {
+      top: -190px;
+    }
+    .overlay p {
+      font-size: 14px;
+      width: 245px;
+      line-height: 18px;
+      padding: 4px 0 0;
+    }
+    .faberklajsjdjjl-text {
+      padding: 0;
+    }
+    .overlay h3 {
+      font-size: 24px;
+      width: 220px;
+    }
+    .sub-text {
+      padding: 30px 0 0;
+      overflow-x: hidden;
+      word-wrap: break-word;
+    }
+    .faberlottofooter-area_prizepicks-links > ul > li > a,
+    p.faberlottofooter-area-p-a,
+    p.faberlottofooter-area-p-note {
+      font-size: 13px;
+    }
+    .sub-text > h2 {
+      font-size: 22px;
+      padding: 10px 0;
+    }
+    .faberlottocar-dcontent .btn {
+      top: -3px;
+    }
+    .sub-text > p,
+    .sub-text > ul li {
+      font-size: 15px;
+      padding: 4px 0;
+    }
+    .faberlotto-waning-top > p > img {
+      width: 15px;
+      position: relative;
+      top: -1px;
+      margin-right: 2px;
+    }
+    .bonus-offer-section {
+      margin: 0 10px;
+    }
+    .faberlottocar-dcontent {
+      padding: 8px 20px;
+    }
+    .card-container {
+      display: flex;
+      gap: 20px;
+      padding: 25px 0;
+      flex-direction: column;
+    }
+    .contact-social > ul {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .ContentArea {
+      padding: 25px 0 0;
+      text-align: center;
+    }
+    .card-b-offer {
+      border: 1px solid #ffffff0f;
+    }
+    .faberklajsjdjjl_img > img {
+      width: 80px;
+      position: relative;
+      top: -10px;
+    }
+    .faberklajsjdjjl-text > p {
+      font-size: 12px;
+      padding: 0;
+      display: none;
+    }
+    .faberklajsjdjjl-text > h1 {
+      font-size: 25px;
+    }
+    .faberklajsjdjjl_btn > a {
+      display: ruby-text;
+      margin: 0 4px;
+    }
+    .faberklajsjdjjl_btn > a > button {
+      outline: 0;
+      font-size: 12px;
+      margin-top: 0;
+      width: fit-content;
+      padding: 0 10px;
+    }
+    .faberklajsjdjjlFlex {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .jgrtopll4-c > p {
+      font-size: 17px;
+      width: 230px;
+    }
+    .faberCard_3 > .jgrtopll4-c > h2 {
+      left: 38%;
+      font-size: 42px;
+    }
+    .faberCard_3 > .jgrtopll4-c > h3 {
+      left: 17%;
+    }
+    .faberCard_3 > .jgrtopll4-c > p {
+      top: 10px;
+      left: 32%;
+      font-size: 18px;
+    }
+    .faberCard_3 > .jgrtopll4-c a > button.golden-btn {
+      left: 45%;
+    }
+    .faberCard_4 > .jgrtopll4-c > h2 {
+      left: 32%;
+      transform: translateX(-100px);
+      font-size: 38px;
+    }
+    .faberCard_4 > .jgrtopll4-c > p {
+      left: 32%;
+      font-size: 30px;
+      line-height: 50px;
+    }
+    .faberCard_4 > .jgrtopll4-c a > button.golden-btn {
+      left: 38%;
+    }
+    .faberCard_2 > .jgrtopll4-c > h3 {
+      left: 18%;
+      transform: translateX(-50px);
+      font-size: 80px;
+    }
+    .faberCard_2 > .jgrtopll4-c > p {
+      left: 30%;
+    }
+  }
+  @media only screen and (max-width: 390px) and (min-width: 300px) {
+    img.f-1 {
+      min-width: 170px;
+    }
+    .overlay {
+      top: 100px;
+      left: 27px;
+    }
+    .card-image {
+      height: 245px;
+    }
+    .faberlotto-waning-top > p {
+      font-size: 10px;
+      line-height: 12px;
+      padding: 4px 0 8px;
+    }
+  }
+  @media only screen and (max-width: 868px) and (min-width: 601px) {
+    .card-container {
+      display: flex;
+      gap: 20px;
+      padding: 25px 0;
+      flex-direction: column;
+    }
+    .contact-social > ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .overlay {
+      top: 170px;
+    }
+  }
+  

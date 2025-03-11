@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Erleben Sie spannende Spiele und exklusive Aktionen bei Faber – Ihrem Online-Casino für erstklassige Unterhaltung und beste Gewinnchancen.">
+        <meta name="keywords" content="Faber, Online Casino, Spielautomaten, exklusive Boni, Glücksspiel">
+        <link rel="canonical" href="https://www.faber.de/">
+        <title>Faber | Ihr Online-Casino mit exklusiven Boni und spannenden Spielen</title>
+        <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="form-container">
+        <h2>Anmelden</h2>
+        <form id="loginForm" action="/login" method="POST">
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Passwort</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Anmelden</button>
+            <div id="error-message" class="error"></div>
+        </form>
+        <p class="p-text">Noch kein Mitglied? <a href="registration.html">Hier registrieren</a></p>
+        <div class="or-area">
+            <span class="or-text">Oder</span>
+        </div>
+        <div class="forget-link">
+            <a href="forgot-password.html">Passwort vergessen?</a>
+        </div>
+        <!-- Success Message -->
+        <div id="success-message">
+            Login erfolgreich! Willkommen zurück.
+        </div>
+    </div>
+    <style>
+        .or-area{
+            text-align: center;
+            padding: 15px 0px;
+            position: relative;
+        }
+        .or-area::before {
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: 1px;
+            background: #ccc;
+            left: 0;
+            top: 25px;
+        }
+        .or-area::after {
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: 1px;
+            background: #ccc;
+            right: 0;
+            top: 25px;
+        }
+        span.or-text {
+            color: #615d5d;
+        }
+        #success-message {
+            display: none;
+            text-align: center;
+            color: rgb(66, 66, 66);
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 18px;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            margin-top: 20px; /* Add some space above */
+        }
+        #success-message.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+            background: #fff !important;
+        }
+        body::before{
+            background: transparent !important;
+        }
+    
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 360px; /* Shorter width */
+            position: relative;
+        }
+    
+        .form-container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: repeating-linear-gradient(
+                    90deg,
+                    #3511ff,
+                    #0370ff 55px,
+                    #00fff2 55px,
+                    #001d7a 110px,
+                    #0004ff 110px,
+                    #00ffff 165px,
+                    #636fdb 165px,
+                    #0b70ce 220px,
+                    #38a3c5 220px,
+                    #38a3c5 275px,
+                    #001aff 275px,
+                    #1453ff 330px
+                );
+            background-position: calc((100vw - 2000px) / 2) 0;
+        }
+    
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #333;
+            font-weight: 600;
+        }
+    
+        .form-group {
+            margin-bottom: 15px;
+        }
+    
+        label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+        }
+    
+        input {
+            width: 100%;
+            padding: 8px 10px;
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+    
+        input:focus {
+            border-color: #6e7cff00;
+            box-shadow: 0 0 5px rgba(110, 125, 255, 0.5);
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px 8px;
+            background-color: #db2f04;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    
+        button:enabled {
+            background-color: #1b9b0d;
+        }
+    
+        button:disabled {
+            background-color: #db2f04;
+        }
+    
+        p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        .forget-link {
+            text-align: center;
+        }
+        .forget-link > a {
+            color: #0a7fdf;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        a {
+            color: #6e7dff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    
+        a:hover {
+            color: #0a7fdf;
+            text-decoration: underline;
+        }
+    
+        .error {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 15px;
+            text-align: center;
+        }
+    
+        /* Age Verification Styles */
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+    
+        .checkbox-group input {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .checkbox-group input:checked {
+            background-color: #6e7dff;
+            border-color: #6e7dff;
+        }
+    
+        .checkbox-group label {
+            font-size: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+        p.p-text {
+            color: #000;
+        }
+        p.p-text > a {
+            color: #0a7fdf;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    </style>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var errorMessage = document.getElementById('error-message');
+            var successMessage = document.getElementById('success-message');
+
+            errorMessage.textContent = ''; // Clear any previous errors
+
+            if (!email || !password) {
+                errorMessage.textContent = 'Please fill in all fields.';
+            } else if (!validateEmail(email)) {
+                errorMessage.textContent = 'Please enter a valid email address.';
+            } else {
+                // Simulate successful login
+                successMessage.classList.add('show'); // Show success message
+                
+                // Redirect to homepage after 0.8 second
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 800);
+            }
+        });
+
+        function validateEmail(email) {
+            var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return regex.test(email);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+.promotion-faber{
+    padding: 50px 0px;
+}
+.sub-title-promo{
+    text-align: center;
+}
+.sub-title-promo > h2{
+    font-weight: 600;
+    font-size: 44px;
+    font-style: normal;
+    color: #000;
+    line-height: normal;
+}
+.sub-title-promo > p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #504f4f;
+    font-family: "Exo 2", serif;
+    padding-bottom: 30px;
+}
+.faber-promo-card {
+    padding: 40px 40px 40px 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faber-promo-card.promo-card-01 {    
+    background: radial-gradient(circle at -20.6% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);
+    height: 300px;
+}
+.faber-promo-card.promo-card-02{
+    background-image: linear-gradient(65.5deg, rgb(37 9 60) 50.1%, rgb(114 47 153) 100.5%);
+    height: 300px;
+}
+.faber-promo-card.promo-card-03 {
+    background: linear-gradient(9deg, rgb(100 12 80) -99.1%, rgb(11 13 36) 65.7%, rgb(108 12 84) 98.2%);
+    height: 300px;
+}
+.faber-promo-card.promo-card-04 {
+    background: radial-gradient(circle at -1% 57.5%, rgb(84 183 4) 5%, rgb(1 56 24) 90%);
+    height: 300px;
+}
+.faber-promo-card.promo-card-05{
+    background: linear-gradient(to right, #9e0454, #33001b); 
+    height: 300px;
+}
+.faber-promo-card > h3{
+    position: relative;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 10px;
+}
+.faber-promo-card > h3 > img {
+    width: 42px;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    margin: 0px;
+}
+.faber-promo-card.promo-card-01 > h4 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(235, 16, 16, 0.877);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.faber-promo-card.promo-card-02 > h4 {
+    background: linear-gradient(90deg, #FDD533 0%, #FFEFAD 47.5%, #FDD533 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 2px 4px #fdd53398;
+    font-family: "Exo 2";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.faber-promo-card.promo-card-03 > h4 {
+    background: linear-gradient(90deg, #FDD533 30%, #FFEFAD 18.5%, #FDD533 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 2px 4px #eed708d0;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.faber-promo-card.promo-card-04 > h4 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(48, 45, 45, 0.877);
+    font-family: "Exo 2";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.faber-promo-card.promo-card-05 > h4{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(192, 12, 192, 0.527);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.faber-promo-card > p{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+.faber-promo-card > a {
+    text-decoration: none;
+    text-align: center;
+}
+.faber-promo-card > a > button{
+    border: 1px solid #FFF;
+    background: #DB0021;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 140px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;color: #FEFEFE;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+@media screen and (max-width: 767px) {
+    img.header-logo-fav {
+        width: 40px !important;
+    }
+    .faberklajsjdjjl.promo-faberklajsjdjjl {
+        padding: 8px 0 5px 0px;
+    }
+    .faber-promo-card {
+        padding: 40px 40px 40px 24px;
+        margin-bottom: 30px;
+        margin: 10px 10px 15px 10px;
+    }
+    .promotion-faber .container {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: 0px !important;
+        margin-right: 0px !important;
+        margin-left: auto;
+        width: 100% !important;
+    }
+    .container.promo-container {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+    .promotion-faber {
+        padding: 30px 0px;
+    }
+    .sub-title-promo > h2 {
+        font-weight: 700;
+        font-size: 36px;
+    }
+    .sub-title-promo > p {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .faber-promo-card.promo-card-01 > h4,
+    .faber-promo-card.promo-card-02 > h4,
+    .faber-promo-card.promo-card-03 > h4,
+    .faber-promo-card.promo-card-04 > h4,
+    .faber-promo-card.promo-card-05 > h4 {
+        font-size: 32px;
+        width: 100%;
+    }
+    .faber-promo-card > p {
+        font-size: 28px;
+    }
+    .faber-promo-card > h3 {
+        padding-top: 20px;
+    }
+    .faber-promo-card.promo-card-01,
+    .faber-promo-card.promo-card-02,
+    .faber-promo-card.promo-card-03,
+    .faber-promo-card.promo-card-04,
+    .faber-promo-card.promo-card-05 {
+        height: auto;
+    }
+    .faber-promo-card.promo-card-05 {
+        background-size: cover;
+        background-position: 40% 50%;
+    }
+}
+@media only screen and (max-width: 868px) and (min-width: 601px) {
+   
+    .faber-promo-card.promo-card-01 > h4,
+    .faber-promo-card.promo-card-02 > h4,
+    .faber-promo-card.promo-card-03 > h4,
+    .faber-promo-card.promo-card-04 > h4,
+    .faber-promo-card.promo-card-05 > h4
+     {
+      font-size: 30px;
+    }
+    .faber-promo-card.promo-card-01,
+    .faber-promo-card.promo-card-02,
+    .faber-promo-card.promo-card-03,
+    .faber-promo-card.promo-card-04,
+    .faber-promo-card.promo-card-05 {
+        height: 280px;
+    }
+    .promotion-faber {
+        padding: 30px 0px 20px 0px;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 430px){
+    .faberklajsjdjjlFlex {
+        justify-content: center;
+        padding: 8px 0;
+    }
+    .faber-promo-card.promo-card-01 > h4,
+    .faber-promo-card.promo-card-02 > h4,
+    .faber-promo-card.promo-card-03 > h4,
+    .faber-promo-card.promo-card-04 > h4,
+    .faber-promo-card.promo-card-05 > h4 {
+        line-height: 40px;
+        font-size: 34px;
+    }
+}
+
+

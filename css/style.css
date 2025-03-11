@@ -1,0 +1,462 @@
+.faberklajsjdjjl_img a {
+    text-decoration: none;
+    display: inline-flex;
+  }
+  img.header-logo-fav {
+    width: 26px !important;
+  }
+  .container {
+    width: 96% !important;
+    max-width: 1365px !important;
+    margin: 0 auto !important;
+  }
+  .card-image-bg > img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .Zjd450w_dP_f,
+  .faberklajsjdjjlFlex {
+    align-items: center;
+    display: flex;
+  }
+  .faberklajsjdjjl-text > h1,
+  .faberklajsjdjjl-text > p,
+  .faberklajsjdjjl_btn > a > button {
+    font-weight: 600;
+    font-family: "Exo 2", serif;
+  }
+  *,
+  .faberklajsjdjjl_btn > a > button,
+  .faberlottofooter-area-links > ul > li > a,
+  p.faberlottofooter-area-copyright,
+  p.faberlottofooter-area-p-a,
+  p.faberlottofooter-area-p-note {
+    font-family: "Exo 2", serif;
+  }
+  .card-b-offer,
+  .card-image,
+  .carsd45c-ribbon,
+  .faberlotto-waning-top > p > img,
+  .faberlottofooter-area,
+  body {
+    position: relative;
+  }
+  .carsd45c-ribbon > img {
+    position: absolute;
+    top: -185px;
+    right: 0;
+    animation: 3s linear infinite infinite-rotate;
+    transform-origin: center;
+  }
+  @keyframes infinite-rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .card-b-offer,
+  .faberlotto-waning-top {
+    width: 100%;
+    overflow: hidden;
+  }
+  .contact-social,
+  .faberlotto-waning-top {
+    text-align: center;
+  }
+  .overlay,
+  body::before {
+    position: absolute;
+    left: 0;
+  }
+  p.faberlottofooter-area-p-a > a,
+  p.faberlottofooter-area-p-a > a:hover {
+    text-decoration: underline;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .faberklajsjdjjl {
+    background-image: linear-gradient(45deg, #002d3c, #090460);
+  }
+  .overlay h3,
+  .overlay p {
+    text-align: left;
+    z-index: 1;
+  }
+  .faberklajsjdjjlFlex {
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  .faberklajsjdjjl_img > a > img {
+    width: 300px;
+  }
+  .faberklajsjdjjl_btn > a {
+    display: inline-block;
+    margin: 0 4px;
+  }
+  .faberklajsjdjjl_btn > a > button {
+    padding: 0;
+    background: #0088a9;
+    outline: 0;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    width: 126px;
+    height: 36px;
+    border: 0;
+  }
+  .faberklajsjdjjl_btn > a > button.log {
+    background: #1b9b0d;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+  }
+  .ContentArea {
+    padding: 30px 0 0;
+  }
+  .faberklajsjdjjl-text > h1 {
+    color: #000;
+    font-size: 34px;
+  }
+  .faberklajsjdjjl-text > p {
+    color: #3f3f3f;
+    font-size: 17px;
+    padding: 5px 0;
+    font-weight: 500;
+  }
+  .PoI542T_l2241 {
+    padding: 8px 0;
+  }
+  .Zjd450w_dP_f {
+    justify-content: space-between;
+  }
+  .faberlottofooter-area {
+    border-width: 1px;
+    padding: 0 15px 20px;
+    bottom: 0;
+    background: #fff;
+  }
+  p.faberlottofooter-area-p-a,
+  p.faberlottofooter-area-p-note {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 24px;
+    margin: 20px 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p.faberlottofooter-area-copyright,
+  p.faberlottofooter-area-copyright > a,
+  p.faberlottofooter-area-p-a > a {
+    color: #000 !important;
+  }
+  p.faberlottofooter-area-copyright {
+    font-weight: 500;
+    padding: 8px;
+    margin: 0;
+    font-size: 13px !important;
+  }
+  .faberlottofooter-area-links > ul > li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0 2px;
+  }
+  .faberlottofooter-area-links > ul > li > a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline !important;
+  }
+  .faberlottofooter-area-links li a::after {
+    display: inline-block;
+    padding: 0 0 0 0.5em;
+    color: #fff;
+    content: "|";
+  }
+  .faberlottofooter-area-links li:last-child a::after {
+    color: transparent;
+  }
+  .faberlottofooter-area-links > ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  .contact-social > ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  img.f-2 {
+    max-width: 62px;
+    border-radius: 10px;
+  }
+  img.f-7 {
+    min-width: 182px;
+  }
+  img.f-5 {
+    min-width: 135px;
+  }
+  img.f-6 {
+    min-width: 170px;
+    border-radius: 6px;
+  }
+  img.f-1 {
+    min-width: 240px;
+  }
+  img.f-4 {
+    min-width: 150px;
+  }
+  .contact-social ul li a {
+    display: inline-block;
+    transition: 0.4s;
+    max-width: 250px;
+    padding: 10px;
+  }
+  .faberklajsjdjjl-text {
+    text-align: center;
+    padding: 15px 0;
+  }
+  .contact-social ul li a > img {
+    width: 240px;
+  }
+  .overlay.card-active-overlay {
+    top: -70px;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px 0;
+  }
+  .card-b-offer {
+    border-radius: 4px;
+    flex-direction: column;
+    display: block;
+    transition: transform 0.5s;
+  }
+  .card-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  button.btn {
+    background: #e91b49;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 24px;
+    text-transform: capitalize;
+  }
+  button.btn:hover {
+    background: #cf0230 !important;
+    outline: 0 !important;
+    border: 0 !important;
+    color: #ffff !important;
+  }
+  .card-b-offer:hover {
+    transform: scale(1.015);
+  }
+  .overlay {
+    top: 154px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    left: 68px;
+  }
+  .overlay.overlay-02 {
+    left: 33%;
+    transform: translateX(0);
+  }
+  .overlay.overlay-03 {
+    left: 21%;
+    transform: translateX(0);
+  }
+  .overlay h3 {
+    font-size: 28px;
+    color: #fffefc;
+    width: 280px;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0 5px 5px #0a0a0ab3;
+  }
+  .overlay p {
+    font-size: 15px;
+    color: #ebe9e9;
+    width: 260px;
+    font-weight: 600;
+    font-family: "Josefin Sans", serif;
+    line-height: 20px;
+    padding: 12px 0 0;
+  }
+  .faberlottocar-dcontent {
+    padding: 20px;
+    background: #fff;
+    display: none;
+  }
+  .faberlottocar-dcontent h4 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .faberlottocar-dcontent > p {
+    color: #9f0909;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .faberlottocar-dcontent .btn {
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    background: #000;
+  }
+  .faberlottocar-dcontent .btn:hover {
+    background: #9f0909;
+    color: #fff;
+  }
+  .sub-text {
+    padding: 30px 0;
+  }
+  .sub-text > h2 {
+    font-size: 26px;
+    color: #000;
+    padding: 12px 0;
+    font-weight: 600;
+  }
+  .sub-text > p,
+  .sub-text > ul > li {
+    font-size: 17px;
+    color: #303030;
+    font-weight: 400;
+    padding: 4px 0;
+    line-height: 23px;
+  }
+  .container.s-title {
+    color: #000;
+    padding-top: 35px;
+  }
+  .faberlotto-waning-top > p {
+    color: rgb(255 255 255);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    padding: 10px 0;
+    font-style: italic;
+  }
+  .faberlotto-waning-top > p > a {
+    color: #fff;
+  }
+  .faberlotto-waning-top {
+    background: #0088a9;
+  }
+  .clip-faber-stripe {
+    position: relative;
+    height: 2px;
+    overflow: hidden;
+    background: repeating-linear-gradient(
+      90deg,
+      #3511ff,
+      #0370ff 55px,
+      #008cff 55px,
+      #001d7a 110px,
+      #0004ff 110px,
+      #0ff 165px,
+      #636fdb 165px,
+      #460bce 220px,
+      #38a3c5 220px,
+      #38a3c5 275px,
+      #001aff 275px,
+      #1453ff 330px
+    );
+    background-position: calc((100vw - 2000px) / 2) 0;
+  }
+  .col.introduction.mx-sm-4.mt-md-4.seo > h1,
+  .col.introduction.mx-sm-4.mt-md-4.seo > h2,
+  dt > h2 {
+    font-weight: 600;
+    font-size: 26px;
+    padding: 15px 0 10px;
+  }
+  .faberlotto-waning-top > p > img {
+    width: 30px;
+    top: -1px;
+    margin-right: 3px;
+  }
+  .customer-support-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .customer-info {
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .cutomer-icon ion-icon {
+    font-size: 30px;
+    color: #007cff;
+  }
+  .cutomer-address-text > a,
+  .cutomer-address-text > p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    line-height: 25px;
+  }
+  .cutomer-address-text > p {
+    margin: 0;
+  }
+  .cutomer-address-text > a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .warning-footer {
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+    padding: 12px 0;
+  }
+  img.f-warning-img {
+    width: 40px;
+    position: relative;
+    top: -4px;
+  }
+  p.f-p-area.f-warning-img {
+    margin: 0;
+    color: #000;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  

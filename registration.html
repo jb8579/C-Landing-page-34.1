@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Erleben Sie spannende Spiele und exklusive Aktionen bei Faber – Ihrem Online-Casino für erstklassige Unterhaltung und beste Gewinnchancen.">
+        <meta name="keywords" content="Faber, Online Casino, Spielautomaten, exklusive Boni, Glücksspiel">
+        <link rel="canonical" href="https://www.faber.de/">
+        <title>Faber | Ihr Online-Casino mit exklusiven Boni und spannenden Spielen</title>
+        <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Ein Konto erstellen</h2>
+            <form id="registerForm" action="/register" method="POST" onsubmit="return showSuccessMessage(event)">
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Passwort</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Passwort bestätigen</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span id="password-error" class="error-message"></span>
+                </div>
+        
+                <div class="checkbox-group">
+                    <input type="checkbox" id="age-verification" required>
+                    <label for="age-verification">Ich bin 18 Jahre oder älter</label>
+                </div>
+        
+                <div class="checkbox-group error-box-top">
+                    <span id="age-error" class="error-message"></span>
+                </div>
+        
+                <button type="submit" id="submit-btn" disabled>Registrieren</button>
+            </form>
+            <p class="p-text">Bereits Mitglied? <a href="login.html">Hier einloggen</a></p>
+        
+            <!-- Verification Popup -->
+            <div id="verification-popup" class="popup">
+                <p>Bitte überprüfen Sie Ihre E-Mail und klicken Sie auf den Link zur Bestätigung.</p>
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
+        
+        <script>
+            function checkFormCompletion() {
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+                const ageVerification = document.getElementById('age-verification').checked;
+                const submitButton = document.getElementById('submit-btn');
+                
+                document.getElementById('email-error').textContent = email ? '' : 'Fehlende E-Mail';
+                document.getElementById('password-error').textContent = password === confirmPassword ? '' : 'Passwörter stimmen nicht überein';
+                document.getElementById('age-error').textContent = ageVerification ? '' : 'Bitte bestätigen Sie, dass Sie 18+ sind';
+                
+                submitButton.disabled = !(email && password && confirmPassword && password === confirmPassword && ageVerification);
+            }
+        
+            function showSuccessMessage(event) {
+                event.preventDefault();
+                document.getElementById('verification-popup').style.display = 'block';
+            }
+        
+            function closePopup() {
+                document.getElementById('verification-popup').style.display = 'none';
+                window.location.href = 'index.html';
+            }
+        
+            document.getElementById('email').addEventListener('input', checkFormCompletion);
+            document.getElementById('password').addEventListener('input', checkFormCompletion);
+            document.getElementById('confirm-password').addEventListener('input', checkFormCompletion);
+            document.getElementById('age-verification').addEventListener('change', checkFormCompletion);
+        
+            checkFormCompletion();
+        </script>
+        
+        <style>
+            .error-message {
+                color: rgb(233, 22, 22);
+                font-size: 12px;
+                display: block;
+            }
+            .checkbox-group.error-box-top {
+                padding: 0px;
+                margin: 0px;
+                position: relative;
+                top: -22px;
+            }
+            .popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 20px;
+                border: 1px solid #ccc;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+        
+        <style>
+            #success-message {
+                display: none;
+                text-align: center;
+                color: rgb(66, 66, 66);
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 18px;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+                margin-top: 20px; /* Add some space above */
+            }
+            #success-message.show {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                color: #000;
+            }
+            #verification-popup{
+                color: #000;
+                margin: 0px;
+                padding: 12px;
+                border: 0px;
+            }
+
+            #verification-popup > button {
+                width: fit-content;
+                position: relative;
+                left: 50%;
+                transform: translateX(-20px);
+                padding: 8px 20px;
+                margin: 12px 0px 8px 0px;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                color: #fff;
+                background: #fff !important;
+            }
+            body::before{
+                background: transparent !important;
+            }
+        
+            .form-container {
+                background-color: #fff;
+                padding: 30px;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px; /* Shorter width */
+                position: relative;
+            }
+        
+            .form-container:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: repeating-linear-gradient(
+                    90deg,
+                    #3511ff,
+                    #0370ff 55px,
+                    #00fff2 55px,
+                    #001d7a 110px,
+                    #0004ff 110px,
+                    #00ffff 165px,
+                    #636fdb 165px,
+                    #0b70ce 220px,
+                    #38a3c5 220px,
+                    #38a3c5 275px,
+                    #001aff 275px,
+                    #1453ff 330px
+                );
+                background-position: calc((100vw - 2000px) / 2) 0;
+            }
+        
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 1.8rem;
+                color: #333;
+                font-weight: 600;
+            }
+        
+            .form-group {
+                margin-bottom: 15px;
+            }
+        
+            label {
+                display: block;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 6px;
+            }
+        
+            input {
+                width: 100%;
+                padding: 8px 10px;
+                box-sizing: border-box;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                font-size: 1rem;
+                outline: none;
+                transition: all 0.3s ease;
+            }
+        
+            input:focus {
+                border-color: #6e7cff00;
+                box-shadow: 0 0 5px rgba(110, 125, 255, 0.5);
+            }
+        
+            button {
+                width: 100%;
+                padding: 10px 8px;
+                background-color: #0088a9;
+                color: #fff;
+                font-size: 1.1rem;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+        
+            button:enabled {
+                background-color: #1b9b0d;
+            }
+        
+            button:disabled {
+                background-color: #0088a9;
+            }
+        
+            p {
+                text-align: center;
+                margin-top: 15px;
+                font-size: 1rem;
+            }
+        
+            a {
+                color: #6e7dff;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+        
+            a:hover {
+                color: #4b61d3;
+                text-decoration: underline;
+            }
+        
+            .error {
+                color: #dc3545;
+                font-size: 0.875rem;
+                margin-top: 15px;
+                text-align: center;
+            }
+        
+            /* Age Verification Styles */
+            .checkbox-group {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                padding: 8px 0px;
+                border-radius: 8px;
+            }
+        
+            .checkbox-group input {
+                margin-right: 8px;
+                width: 16px;
+                height: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+        
+            .checkbox-group input:checked {
+                background-color: #6e7dff;
+                border-color: #6e7dff;
+            }
+        
+            .checkbox-group label {
+                font-size: 1rem;
+                color: #333;
+                font-weight: 600;
+            }
+            p.p-text {
+                color: #000;
+            }
+            p.p-text > a {
+                color: #0a7fdf;
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        </style>
+        
+    </body>
+</html>
