@@ -120,7 +120,7 @@
     text-decoration: none;
     text-align: center;
 }
-.faber-promo-card > a > button{
+.faber-promo-card > a > button {
     border: 1px solid #FFF;
     background: #DB0021;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -131,7 +131,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-shrink: 0;color: #FEFEFE;
+    flex-shrink: 0;
+    color: #FEFEFE;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -139,7 +140,36 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
+
+/* Ripple Effect */
+.faber-promo-card > a > button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(63 27 1 / 14%);
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Activate Ripple on Hover */
+.faber-promo-card > a > button:hover::after {
+    opacity: 1;
+    transform: scale(10);
+}
+.faber-promo-card > a > button:hover {
+    background: linear-gradient(45deg, #ffc100, #e89000);
+    box-shadow: 0px 0px 10px 2px rgb(255 193 0);
+    color: #000;
+    z-index: 99;
+}
+
+
 @media screen and (max-width: 767px) {
     img.header-logo-fav {
         width: 40px !important;
